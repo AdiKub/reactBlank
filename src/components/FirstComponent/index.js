@@ -1,15 +1,18 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+// import { useSelector, useDispatch } from 'react-redux';
 import './styles.scss';
 
 const FirstComponent = () => {
   // const dispatch = useDispatch()
-  // const contact = useSelector(store=>store.contact)
+  // const showMe = useSelector(store=>store.show_me)
   // const mode = useSelector(state => state.modeEdit)
 
   return (
-    <div>
-      FirstComponent
+    <div className='FirstComponent'>
+      <Link to='/second'>
+        <span>SecondComponent</span>
+      </Link>
     </div>
   )
 }
